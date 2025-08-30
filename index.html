@@ -7,24 +7,78 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Welcome to RORU Interpret!</h1>
-    <p>This website is hosted with GitHub Pages 🎉</p>
 
-    <h2>Contact Us</h2>
-    <p>Please fill out the form below to send us your request.</p>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>RORU Interpret</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Contact form -->
-    <form action="https://formsubmit.co/el/sixeru" method="POST" class="contact-form">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h2>Welcome to RORU Interpret 🌍</h2>
+      <p>Professional interpretation and translation services at your fingertips.</p>
+    </div>
+  </section>
 
-      <!-- Hidden settings -->
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="https://roruinterpret.github.io/RORU-Interpret/thanks.html">
-    </form>
-  </div>
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>
+        RORU Interpret connects people by breaking language barriers.  
+        We specialize in real-time interpretation and high-quality translations.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section light">
+    <div class="container">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Simultaneous and consecutive interpretation</li>
+        <li>Business and legal translations</li>
+        <li>Technical and academic documents</li>
+        <li>Remote interpreting via online platforms</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Please fill out the form below to send us your request:</p>
+
+      <form action="https://formsubmit.co/el/sixeru" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+
+        <!-- Hidden settings -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://roruinterpret.github.io/RORU-Interpret/thankyou.html">
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2025 RORU Interpret. All rights reserved.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
