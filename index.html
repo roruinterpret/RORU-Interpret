@@ -1,55 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RORU Interpret</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RORU Interpret</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Welcome to RORU Interpret!</h1>
-    <p>This website is hosted with GitHub Pages 🎉</p>
 
-    <h2>Contact Us</h2>
-    <p>Please fill out the form below to send us your request.</p>
+<header>
+    <h1>RORU Interpret</h1>
+    <p>Interpretation — submit your request below</p>
+</header>
 
-    <form action="https://formsubmit.co/el/sixeru" method="POST" class="contact-form">
-      <!-- Personal Information -->
-      <label for="name">Your Name</label>
-      <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+<main>
+    <form action="https://formsubmit.co/roruinterpret@gmail.com" method="POST">
+        <!-- Anti-spam -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://roruinterpret.github.io/RORU-Interpret/thanks.html">
 
-      <label for="email">Your Email</label>
-      <input type="email" id="email" name="email" placeholder="Enter your email address" required />
+        <input type="text" name="Client / Company" placeholder="Client / Company" required>
+        <input type="text" name="Name" placeholder="Name" required>
+        <input type="text" name="Billing Address" placeholder="Billing Address">
+        <input type="text" name="Contacts" placeholder="Phone, Email" required>
+        <input type="text" name="Appointment Location" placeholder="Appointment Location" required>
+        <input type="text" name="Appointment Date and Day" placeholder="Date and Day" required>
+        <input type="text" name="Appointment Time" placeholder="Time" required>
+        <input type="text" name="Appointment Duration" placeholder="Duration (approx.)" required>
 
-      <label for="phone">Phone Number</label>
-      <input type="tel" id="phone" name="phone" placeholder="+1 (555) 123-4567" />
+        <label for="language">Language:</label>
+        <select name="Language" id="language" required>
+            <option value="">-- Select Language --</option>
+            <option value="Romanian">Romanian</option>
+            <option value="Russian">Russian</option>
+        </select>
 
-      <!-- Service Type -->
-      <label for="service">Service Type</label>
-      <select id="service" name="service" required>
-        <option value="" disabled selected>-- Please choose an option --</option>
-        <option value="interpretation">Interpretation</option>
-        <option value="translation">Translation</option>
-        <option value="localization">Localization</option>
-        <option value="other">Other</option>
-      </select>
+        <input type="text" name="Order Reference" placeholder="Order Reference">
+        <textarea name="Comments" placeholder="Comments" rows="4"></textarea>
 
-      <!-- Date -->
-      <label for="date">Preferred Date</label>
-      <input type="date" id="date" name="date" />
-
-      <!-- Message -->
-      <label for="message">Your Message</label>
-      <textarea id="message" name="message" rows="5" placeholder="Describe your request here..." required></textarea>
-
-      <!-- Hidden settings -->
-      <input type="hidden" name="_captcha" value="false" />
-      <input type="hidden" name="_next" value="https://roruinterpret.github.io/RORU-Interpret/thanks.html" />
-
-      <!-- Submit -->
-      <button type="submit">Send Request</button>
+        <button type="submit">Submit Request</button>
     </form>
-  </div>
+</main>
+
 </body>
 </html>
