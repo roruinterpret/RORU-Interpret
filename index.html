@@ -1,65 +1,30 @@
-/* Общие стили */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #f4f6f8;
-  color: #333;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RORU Interpret</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to RORU Interpret!</h1>
+    <p>This website is hosted with GitHub Pages 🎉</p>
 
-/* Центрируем контейнер */
-.container {
-  max-width: 600px;
-  margin: 50px auto;
-  background: #fff;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
+    <h2>Contact Us</h2>
+    <p>Please fill out the form below to send us your request.</p>
 
-/* Заголовки */
-h1 {
-  text-align: center;
-  color: #2c3e50;
-}
+    <!-- Contact form -->
+    <form action="https://formsubmit.co/el/sixeru" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
 
-h2 {
-  margin-top: 30px;
-  color: #34495e;
-}
-
-/* Форма */
-.contact-form {
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-form input,
-.contact-form textarea {
-  margin-bottom: 15px;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 14px;
-}
-
-.contact-form textarea {
-  resize: vertical;
-  min-height: 100px;
-}
-
-/* Кнопка */
-.contact-form button {
-  padding: 12px;
-  background: #3498db;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.contact-form button:hover {
-  background: #2980b9;
-}
+      <!-- Hidden settings -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://roruinterpret.github.io/RORU-Interpret/thanks.html">
+    </form>
+  </div>
+</body>
+</html>
