@@ -1,37 +1,65 @@
+/* Общие стили */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-  margin: 20px;
+  margin: 0;
+  padding: 0;
+  background: #f4f6f8;
   color: #333;
 }
 
-h1 {
-  color: #0066cc;
-}
-
-form {
-  max-width: 400px;
+/* Центрируем контейнер */
+.container {
+  max-width: 600px;
+  margin: 50px auto;
   background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-input, textarea, button {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
+/* Заголовки */
+h1 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+h2 {
+  margin-top: 30px;
+  color: #34495e;
+}
+
+/* Форма */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 15px;
+  padding: 12px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 8px;
+  font-size: 14px;
 }
 
-button {
-  background: #0066cc;
+.contact-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Кнопка */
+.contact-form button {
+  padding: 12px;
+  background: #3498db;
   color: #fff;
   border: none;
+  border-radius: 8px;
+  font-size: 16px;
   cursor: pointer;
+  transition: background 0.3s;
 }
 
-button:hover {
-  background: #004999;
+.contact-form button:hover {
+  background: #2980b9;
 }
