@@ -2,26 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Contact Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <h1>Contact Us</h1>
-
-    <form action="https://formsubmit.co/https://formsubmit.co/el/sixeru" method="POST">
-      <!-- Redirect после отправки -->
-      <input type="hidden" name="_next" value="https://roruinterpret.github.io/RORU-Interpret/thanks.html">
-      <!-- Выключаем капчу -->
-      <input type="hidden" name="_captcha" value="false">
-
-      <label for="name">Name:</label>
+    <h2>Contact Us</h2>
+    <form action="https://roruinterpret.github.io/RORU-Interpret/thanks.html" method="get">
+      <label for="name">Name</label>
       <input type="text" id="name" name="name" required>
 
-      <label for="email">Email:</label>
+      <label for="email">Email</label>
       <input type="email" id="email" name="email" required>
 
-      <label for="message">Message:</label>
+      <label for="message">Message</label>
       <textarea id="message" name="message" rows="5" required></textarea>
 
       <button type="submit">Send</button>
