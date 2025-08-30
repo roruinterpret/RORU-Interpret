@@ -63,3 +63,18 @@ h2 {
 .contact-form button:hover {
   background: #2980b9;
 }
+/* Кнопка "Назад" */
+.back-link {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  padding: 10px 15px;
+  background: #2ecc71;
+  color: #fff;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.back-link:hover {
+  background: #27ae60;
+}
