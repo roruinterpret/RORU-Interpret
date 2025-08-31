@@ -96,4 +96,39 @@ footer {
   background-color: #222;
   color: #ddd;
   margin-top: 30px;
+}/* Главная страница */
+.intro {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
 }
+
+.intro h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.intro p {
+  margin: 10px 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+.btn-primary {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  font-size: 1.1em;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
