@@ -3,70 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Form</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f7f7fb;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
-    .container {
-      background-color: #fff;
-      padding: 20px 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      width: 400px;
-    }
-    h2 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    label {
-      font-weight: bold;
-      display: block;
-      margin-top: 10px;
-    }
-    input, textarea {
-      width: 100%;
-      padding: 8px;
-      margin-top: 5px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    button {
-      width: 100%;
-      padding: 10px;
-      margin-top: 15px;
-      background-color: #0056b3;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #003d80;
-    }
-  </style>
+  <title>Request Interpretation</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h2>Contact Us</h2>
-    <form action="thanks.html" method="get">
-      <label for="name">Name</label>
+  <header>
+    <h1>Request Interpretation</h1>
+  </header>
+
+  <main>
+    <form action="thanks.html" method="get" class="contact-form">
+      <label for="name">Full Name:</label>
       <input type="text" id="name" name="name" required>
 
-      <label for="email">Email</label>
+      <label for="email">Email:</label>
       <input type="email" id="email" name="email" required>
 
-      <label for="message">Message</label>
-      <textarea id="message" name="message" rows="4" required></textarea>
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required>
 
-      <button type="submit">Send</button>
+      <label for="language">Languages Needed:</label>
+      <input type="text" id="language" name="language" required placeholder="e.g. Russian ⇄ English">
+
+      <label for="details">Details of Appointment:</label>
+      <textarea id="details" name="details" rows="5" required></textarea>
+
+      <button type="submit" class="btn">Submit</button>
     </form>
-  </div>
+  </main>
+
+  <footer>
+    <p>© 2025 RORU Interpret</p>
+  </footer>
 </body>
 </html>
