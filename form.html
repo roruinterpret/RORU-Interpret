@@ -8,32 +8,31 @@
 </head>
 <body>
   <header>
-    <h1><span class="ro">RO</span><span class="ru">RU</span> <span class="interpret">Interpret</span></h1>
+    <h1><span class="brand">RORU</span> Interpret</h1>
     <p>Submit your interpretation request below</p>
   </header>
 
   <main>
     <form class="request-form">
-      <input type="text" placeholder="Client / Company" required>
-      <input type="text" placeholder="Name" required>
-      <input type="text" placeholder="Billing Address" required>
-      <input type="text" placeholder="Phone, Email" required>
-      <input type="text" placeholder="Appointment Location" required>
-      <input type="text" placeholder="Date and Day" required>
-      <input type="text" placeholder="Time" required>
-      <input type="text" placeholder="Duration (approx.)" required>
-
+      <input type="text" placeholder="Client / Company">
+      <input type="text" placeholder="Name">
+      <input type="text" placeholder="Billing Address">
+      <input type="text" placeholder="Phone, Email">
+      <input type="text" placeholder="Appointment Location">
+      <input type="text" placeholder="Date and Day">
+      <input type="text" placeholder="Time">
+      <input type="text" placeholder="Duration (approx.)">
+      
       <label for="language">Language:</label>
-      <select id="language" name="language" required>
-        <option value="">-- Select Language --</option>
-        <option value="ru-en">Russian ↔ English</option>
-        <option value="ro-en">Romanian ↔ English</option>
-        <option value="ro-ru">Romanian ↔ Russian</option>
+      <select id="language">
+        <option>-- Select Language --</option>
+        <option>Romanian ⇄ English</option>
+        <option>Russian ⇄ English</option>
       </select>
 
       <input type="text" placeholder="Order Reference">
       <textarea placeholder="Comments"></textarea>
-
+      
       <button type="submit">Submit Request</button>
     </form>
   </main>
