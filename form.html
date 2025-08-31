@@ -8,36 +8,34 @@
 </head>
 <body>
   <header>
-    <h1>Request <span class="brand">Form</span></h1>
-    <p>RORU Interpret</p>
+    <h1 class="logo">RORU Interpret</h1>
+    <p class="subtitle">Community Interpreting Service</p>
   </header>
 
   <main>
     <section class="card">
-      <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <input type="tel" placeholder="Your Phone Number">
+      <h2>Request Interpretation</h2>
+      <form class="request-form">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required>
 
-        <select required>
-          <option value="">Select Language</option>
-          <option>Romanian ⇄ English</option>
-          <option>Russian ⇄ English</option>
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone">
+
+        <label for="language">Language Pair</label>
+        <select id="language" name="language" required>
+          <option value="ro-en">Romanian ⇄ English</option>
+          <option value="ru-en">Russian ⇄ English</option>
         </select>
 
-        <input type="date" required>
-        <input type="time" required>
-
-        <textarea rows="4" placeholder="Additional Details"></textarea>
+        <label for="details">Details</label>
+        <textarea id="details" name="details" rows="4" required></textarea>
 
         <button type="submit" class="btn">Submit Request</button>
       </form>
-    </section>
-
-    <section class="card contact">
-      <p><b>Phone:</b> 089 432 89 21</p>
-      <p><b>Email:</b> roruinterpret@gmail.com</p>
-      <a href="index.html" class="btn">Back to Home</a>
     </section>
   </main>
 
