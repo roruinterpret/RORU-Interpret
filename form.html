@@ -2,46 +2,75 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Request Interpretation</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+      margin: 0;
+      padding: 40px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2em;
+    }
+    form {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    input, select, textarea, button {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1em;
+    }
+    button {
+      background: linear-gradient(to right, blue, red, purple);
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 1.1em;
+    }
+    button:hover {
+      opacity: 0.9;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>
-      <span class="ro">RO</span>
-      <span class="ru">RU</span>
-      <span class="interpret">Interpret</span>
-    </h1>
-    <p class="subtitle">Submit your request below</p>
-  </header>
+  <h2>Interpretation — submit your request below</h2>
 
-  <main>
-    <form class="request-form">
-      <input type="text" placeholder="Client / Company">
-      <input type="text" placeholder="Name">
-      <input type="text" placeholder="Billing Address">
-      <input type="text" placeholder="Phone, Email">
-      <input type="text" placeholder="Appointment Location">
-      <input type="text" placeholder="Date and Day">
-      <input type="text" placeholder="Time">
-      <input type="text" placeholder="Duration (approx.)">
+  <form action="https://formsubmit.co/el/sixeru" method="POST">
+    <input type="text" name="Client / Company" placeholder="Client / Company" required>
+    <input type="text" name="Name" placeholder="Name" required>
+    <input type="text" name="Billing Address" placeholder="Billing Address" required>
+    <input type="email" name="Email" placeholder="Email" required>
+    <input type="text" name="Appointment Location" placeholder="Appointment Location">
+    <input type="text" name="Date and Day" placeholder="Date and Day">
+    <input type="text" name="Time" placeholder="Time">
+    <input type="text" name="Duration" placeholder="Duration (approx.)">
+    
+    <label for="language">Language:</label>
+    <select name="Language" id="language">
+      <option value="">-- Select Language --</option>
+      <option value="EN">English</option>
+      <option value="RU">Russian</option>
+      <option value="RO">Romanian</option>
+    </select>
 
-      <label>Language:</label>
-      <select>
-        <option>-- Select Language --</option>
-        <option>Romanian ⇄ English</option>
-        <option>Russian ⇄ English</option>
-      </select>
+    <input type="text" name="Order Reference" placeholder="Order Reference">
+    <textarea name="Comments" placeholder="Comments"></textarea>
 
-      <input type="text" placeholder="Order Reference">
-      <textarea placeholder="Comments"></textarea>
+    <!-- Настройки FormSubmit -->
+    <input type="hidden" name="_next" value="https://roruinterpret.github.io/RORU-Interpret/thankyou.html">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_replyto" value="">
 
-      <button type="submit" class="btn">Submit Request</button>
-    </form>
-  </main>
-
-  <footer>
-    <p>© 2025 RORU Interpret — All Rights Reserved</p>
-  </footer>
+    <button type="submit">Submit Request</button>
+  </form>
 </body>
 </html>
