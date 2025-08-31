@@ -3,37 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Request Interpretation</title>
+  <title>Request Form - RORU Interpret</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Request Interpretation</h1>
+    <h1><span class="ro">RO</span><span class="ru">RU</span> Interpret</h1>
+    <p>Community Interpreting Service</p>
   </header>
 
   <main>
-    <form action="thanks.html" method="get" class="contact-form">
-      <label for="name">Full Name:</label>
-      <input type="text" id="name" name="name" required>
+    <section>
+      <h2>Request Interpretation</h2>
+      <form action="thanks.html" method="get" class="contact-form">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
 
-      <label for="phone">Phone:</label>
-      <input type="tel" id="phone" name="phone" required>
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone">
 
-      <label for="language">Languages Needed:</label>
-      <input type="text" id="language" name="language" required placeholder="e.g. Russian ⇄ English">
+        <label for="details">Details:</label>
+        <textarea id="details" name="details" rows="4"></textarea>
 
-      <label for="details">Details of Appointment:</label>
-      <textarea id="details" name="details" rows="5" required></textarea>
-
-      <button type="submit" class="btn">Submit</button>
-    </form>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </section>
   </main>
 
   <footer>
-    <p>© 2025 RORU Interpret</p>
+    <p>© 2025 RORU Interpret — All Rights Reserved</p>
   </footer>
 </body>
 </html>
