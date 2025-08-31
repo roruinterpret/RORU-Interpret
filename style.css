@@ -1,64 +1,98 @@
+/* Общий стиль */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f9;
   margin: 0;
   padding: 0;
-}
-
-.container {
-  width: 90%;
-  max-width: 500px;
-  margin: 50px auto;
-  background: white;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  background: #f8f9fa;
+  color: #333;
   text-align: center;
 }
 
-h1, h2 {
-  margin-bottom: 20px;
+/* Хедер */
+header {
+  padding: 20px;
+  background: white;
+  border-bottom: 1px solid #ddd;
 }
 
-label {
-  display: block;
-  margin: 10px 0 5px;
+header h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+header .ro {
+  color: #007bff; /* синий */
   font-weight: bold;
-  text-align: left;
 }
 
-input, textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+header .ru {
+  color: #dc3545; /* красный */
+  font-weight: bold;
+}
+
+header p {
+  margin: 5px 0 0;
+  font-size: 1.1em;
+  color: #666;
+}
+
+/* Основные секции */
+main {
+  padding: 30px 20px;
+}
+
+h2 {
+  font-size: 1.5em;
   margin-bottom: 15px;
-  font-size: 14px;
 }
 
-button, .btn {
+/* Кнопки */
+.btn {
   display: inline-block;
-  width: 100%;
-  padding: 12px;
+  padding: 10px 20px;
   background: #007bff;
   color: white;
-  border: none;
   border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  text-align: center;
   text-decoration: none;
-  margin-top: 10px;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
-button:hover, .btn:hover {
+.btn:hover {
   background: #0056b3;
 }
 
-.thanks-box p {
-  margin: 15px 0;
+/* Форма */
+.contact-form {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
 }
 
-.home {
-  max-width: 600px;
+.contact-form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  margin-top: 15px;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* Подвал */
+footer {
+  margin-top: 40px;
+  padding: 15px;
+  background: #343a40;
+  color: #fff;
+  font-size: 0.9em;
 }
