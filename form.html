@@ -2,73 +2,110 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Request Interpretation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f8f9fa;
+      background-color: #f5f5f5;
       margin: 0;
-      padding: 40px;
-    }
-    h2 {
+      padding: 0;
       text-align: center;
-      margin-bottom: 30px;
-      font-size: 2em;
     }
+    header {
+      font-size: 2rem;
+      font-weight: bold;
+      padding: 20px;
+    }
+    .ro { color: blue; }
+    .ru { color: red; }
+    .interpret { color: purple; }
     form {
-      max-width: 900px;
+      max-width: 800px;
       margin: 0 auto;
+      text-align: left;
+      padding: 20px;
     }
-    input, select, textarea, button {
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+    input, select, textarea {
       width: 100%;
-      padding: 12px;
-      margin: 10px 0;
+      padding: 10px;
+      margin-bottom: 15px;
       border: 1px solid #ccc;
-      border-radius: 6px;
-      font-size: 1em;
+      border-radius: 5px;
+      font-size: 1rem;
     }
     button {
-      background: linear-gradient(to right, blue, red, purple);
-      color: white;
+      background-color: #007BFF;
+      color: #fff;
       border: none;
+      padding: 15px;
+      font-size: 1rem;
+      width: 100%;
+      border-radius: 5px;
       cursor: pointer;
-      font-size: 1.1em;
     }
     button:hover {
-      opacity: 0.9;
+      background-color: #0056b3;
     }
   </style>
 </head>
 <body>
-  <h2>Interpretation — submit your request below</h2>
+  <header>
+    <span class="ro">RO</span> -
+    <span class="ru">RU</span> -
+    <span class="interpret">Interpret</span>
+  </header>
 
   <form action="https://formsubmit.co/el/sixeru" method="POST">
-    <input type="text" name="Client / Company" placeholder="Client / Company" required>
-    <input type="text" name="Name" placeholder="Name" required>
-    <input type="text" name="Billing Address" placeholder="Billing Address" required>
-    <input type="email" name="Email" placeholder="Email" required>
-    <input type="text" name="Appointment Location" placeholder="Appointment Location">
-    <input type="text" name="Date and Day" placeholder="Date and Day">
-    <input type="text" name="Time" placeholder="Time">
-    <input type="text" name="Duration" placeholder="Duration (approx.)">
-    
-    <label for="language">Language:</label>
-    <select name="Language" id="language">
+    <!-- скрытые настройки -->
+    <input type="hidden" name="_next" value="https://roruinterpret.github.io/RORU-Interpret/thanks.html">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_autoresponse" value="Thank you for your request. We will contact you soon.">
+
+    <label for="client">Client / Company</label>
+    <input type="text" id="client" name="Client / Company" required>
+
+    <label for="name">Name</label>
+    <input type="text" id="name" name="Name" required>
+
+    <label for="address">Billing Address</label>
+    <input type="text" id="address" name="Billing Address">
+
+    <label for="contact">Phone, Email</label>
+    <input type="text" id="contact" name="Phone, Email" required>
+
+    <label for="location">Appointment Location</label>
+    <input type="text" id="location" name="Appointment Location">
+
+    <label for="date">Date and Day</label>
+    <input type="text" id="date" name="Date and Day">
+
+    <label for="time">Time</label>
+    <input type="text" id="time" name="Time">
+
+    <label for="duration">Duration (approx.)</label>
+    <input type="text" id="duration" name="Duration (approx.)">
+
+    <label for="language">Language</label>
+    <select id="language" name="Language" required>
       <option value="">-- Select Language --</option>
-      <option value="EN">English</option>
-      <option value="RU">Russian</option>
-      <option value="RO">Romanian</option>
+      <option value="Romanian">Romanian</option>
+      <option value="Russian">Russian</option>
+      <option value="English">English</option>
+      <option value="Other">Other</option>
     </select>
 
-    <input type="text" name="Order Reference" placeholder="Order Reference">
-    <textarea name="Comments" placeholder="Comments"></textarea>
+    <label for="order">Order Reference</label>
+    <input type="text" id="order" name="Order Reference">
 
-    <!-- Настройки FormSubmit -->
-    <input type="hidden" name="_next" value="https://roruinterpret.github.io/RORU-Interpret/thankyou.html">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_template" value="table">
-    <input type="hidden" name="_replyto" value="">
+    <label for="comments">Comments</label>
+    <textarea id="comments" name="Comments" rows="4"></textarea>
 
     <button type="submit">Submit Request</button>
   </form>
