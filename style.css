@@ -1,7 +1,7 @@
-/* Общий фон */
+/* Общие стили */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f7f7f7;
+  background-color: #f9f9f9;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -10,73 +10,61 @@ body {
 
 /* Логотип */
 h1 {
-  font-size: 2.5em;
+  font-size: 2.5rem;
   margin-top: 40px;
-  margin-bottom: 5px;
-  font-weight: bold;
+  margin-bottom: 10px;
 }
+.ro { color: #007BFF; }      /* RO – синий */
+.ru { color: #FF0000; }      /* RU – красный */
+.interpret { color: #800080; } /* Interpret – фиолетовый */
 
-/* Цвета для логотипа */
-h1 .ro {
-  color: #007bff; /* синий */
-}
-h1 .ru {
-  color: #e63946; /* красный */
-}
-h1 .interpret {
-  color: #6f42c1; /* фиолетовый */
-}
-
-/* Подзаголовок */
 .subtitle {
-  font-size: 1.1em;
-  margin-bottom: 40px;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
   color: #555;
 }
 
-/* Контейнер контента */
+/* Карточка */
 .content {
+  background: #fff;
+  padding: 30px;
+  margin: 20px auto;
   max-width: 600px;
-  margin: 0 auto;
-  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* Заголовок блока */
 .content h2 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   margin-bottom: 20px;
 }
 
-/* Текст */
 .content p {
-  font-size: 1em;
-  line-height: 1.5;
-  margin: 10px 0;
+  font-size: 1rem;
+  margin: 8px 0;
 }
 
 /* Кнопка */
-button, .btn {
-  background-color: #007bff;
-  color: white;
-  padding: 12px 25px;
-  border: none;
-  border-radius: 6px;
-  font-size: 1em;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background 0.3s ease;
+.btn {
+  display: inline-block;
   margin-top: 20px;
+  padding: 12px 20px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s;
 }
-
-button:hover, .btn:hover {
+.btn:hover {
   background-color: #0056b3;
 }
 
 /* Подвал */
 footer {
-  margin-top: 60px;
-  padding: 20px;
   background: #222;
-  color: #fff;
-  font-size: 0.9em;
+  color: #ddd;
+  padding: 15px;
+  font-size: 0.9rem;
+  margin-top: 40px;
 }
