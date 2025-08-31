@@ -1,99 +1,97 @@
-/* Общие стили */
+/* ====== Общие стили ====== */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f8f9fa;
+  background-color: #f5f5f5;
   color: #333;
   text-align: center;
 }
 
-/* Шапка */
 header {
-  padding: 30px 10px 10px;
+  padding: 30px 15px 15px;
 }
 
-header h1 {
-  font-size: 2.2em;
-  margin: 0;
-  background: linear-gradient(to right, #007bff, #ff007f);
+.logo {
+  font-size: 2.5em;
+  font-weight: bold;
+  background: linear-gradient(90deg, red, blue, purple);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-header .brand {
-  color: #007bff;
-  -webkit-text-fill-color: initial;
-}
-
-header p {
-  margin-top: 5px;
+.subtitle {
+  font-size: 1.2em;
   color: #666;
+  margin: 0;
 }
 
-/* Карточки */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 15px;
+}
+
 .card {
   background: white;
-  padding: 25px;
-  margin: 20px auto;
-  border-radius: 12px;
+  padding: 30px;
+  border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 500px;
+  width: 100%;
   text-align: center;
-  max-width: 650px;
 }
 
-/* Контакты */
-.contact {
-  font-size: 1em;
-  color: #444;
+.card h2 {
+  margin-bottom: 20px;
+  color: #222;
 }
 
-/* Кнопки */
+footer {
+  margin-top: 30px;
+  background: #222;
+  color: white;
+  padding: 15px;
+}
+
+/* ====== Кнопки ====== */
 .btn {
   display: inline-block;
-  background: #007bff;
+  margin-top: 15px;
+  padding: 12px 25px;
+  font-size: 1em;
+  font-weight: bold;
   color: white;
-  padding: 12px 24px;
+  background: #007bff;
+  border: none;
   border-radius: 6px;
   text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
-  margin-top: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
 .btn:hover {
   background: #0056b3;
 }
 
-/* Footer */
-footer {
-  background: #222;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  margin-top: 40px;
-  font-size: 0.9em;
-}
-
-/* Сетка формы */
-form {
+/* ====== Форма ====== */
+.request-form {
   display: grid;
   gap: 15px;
-  grid-template-columns: 1fr 1fr;
+  text-align: left;
 }
 
-form input, form select, form textarea {
+.request-form label {
+  font-weight: bold;
+}
+
+.request-form input,
+.request-form select,
+.request-form textarea {
+  width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 1em;
-}
-
-form textarea {
-  grid-column: 1 / span 2;
-  resize: vertical;
-}
-
-form .btn {
-  grid-column: 1 / span 2;
 }
