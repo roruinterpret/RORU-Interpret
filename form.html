@@ -1,9 +1,7 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Request Interpretation</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -18,31 +16,28 @@
   </header>
 
   <main>
-    <div class="card">
-      <h2>Request Interpretation</h2>
-      <form>
-        <input type="text" placeholder="Client / Company" required>
-        <input type="text" placeholder="Name" required>
-        <input type="text" placeholder="Billing Address" required>
-        <input type="text" placeholder="Phone, Email" required>
-        <input type="text" placeholder="Appointment Location" required>
-        <input type="text" placeholder="Date and Day" required>
-        <input type="text" placeholder="Time" required>
-        <input type="text" placeholder="Duration (approx.)" required>
+    <form class="request-form">
+      <input type="text" placeholder="Client / Company">
+      <input type="text" placeholder="Name">
+      <input type="text" placeholder="Billing Address">
+      <input type="text" placeholder="Phone, Email">
+      <input type="text" placeholder="Appointment Location">
+      <input type="text" placeholder="Date and Day">
+      <input type="text" placeholder="Time">
+      <input type="text" placeholder="Duration (approx.)">
 
-        <label for="language"><strong>Language:</strong></label>
-        <select id="language" required>
-          <option value="">-- Select Language --</option>
-          <option>Romanian ⇄ English</option>
-          <option>Russian ⇄ English</option>
-        </select>
+      <label>Language:</label>
+      <select>
+        <option>-- Select Language --</option>
+        <option>Romanian ⇄ English</option>
+        <option>Russian ⇄ English</option>
+      </select>
 
-        <input type="text" placeholder="Order Reference">
-        <textarea placeholder="Comments"></textarea>
+      <input type="text" placeholder="Order Reference">
+      <textarea placeholder="Comments"></textarea>
 
-        <button type="submit" class="btn">Submit Request</button>
-      </form>
-    </div>
+      <button type="submit" class="btn">Submit Request</button>
+    </form>
   </main>
 
   <footer>
