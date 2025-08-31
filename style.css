@@ -3,113 +3,97 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f8f9fa;
+  background: #f8f9fa;
   color: #333;
+  text-align: center;
 }
 
+/* Шапка */
 header {
-  text-align: center;
-  padding: 20px;
+  padding: 30px 10px 10px;
 }
 
 header h1 {
-  font-size: 2.5em;
+  font-size: 2.2em;
   margin: 0;
+  background: linear-gradient(to right, #007bff, #ff007f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 header .brand {
   color: #007bff;
-  font-weight: bold;
-}
-
-header h1 span:last-child {
-  color: purple;
+  -webkit-text-fill-color: initial;
 }
 
 header p {
-  margin: 5px 0;
-  font-size: 1.2em;
+  margin-top: 5px;
+  color: #666;
 }
 
-main {
-  max-width: 800px;
+/* Карточки */
+.card {
+  background: white;
+  padding: 25px;
   margin: 20px auto;
-  padding: 0 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  max-width: 650px;
 }
 
-/* Главная страница */
-.intro {
-  margin-bottom: 20px;
+/* Контакты */
+.contact {
+  font-size: 1em;
+  color: #444;
 }
 
-.contact p {
-  margin: 5px 0;
-}
-
+/* Кнопки */
 .btn {
   display: inline-block;
-  margin-top: 15px;
-  padding: 10px 20px;
   background: #007bff;
   color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
   text-decoration: none;
-  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+  margin-top: 15px;
 }
 
 .btn:hover {
   background: #0056b3;
 }
 
-/* Форма */
-.request-form {
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 0.9em;
+}
+
+/* Сетка формы */
+form {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   gap: 15px;
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  grid-template-columns: 1fr 1fr;
 }
 
-.request-form label {
-  grid-column: span 2;
-  font-weight: bold;
-}
-
-.request-form input,
-.request-form select,
-.request-form textarea {
+form input, form select, form textarea {
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 6px;
   font-size: 1em;
 }
 
-.request-form textarea {
-  grid-column: span 2;
-  min-height: 80px;
+form textarea {
+  grid-column: 1 / span 2;
+  resize: vertical;
 }
 
-.request-form button {
-  grid-column: span 2;
-  padding: 12px;
-  background: #007bff;
-  border: none;
-  color: white;
-  font-size: 1.2em;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.request-form button:hover {
-  background: #0056b3;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 10px;
-  background: #222;
-  color: white;
-  margin-top: 30px;
+form .btn {
+  grid-column: 1 / span 2;
 }
