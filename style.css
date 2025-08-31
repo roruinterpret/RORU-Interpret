@@ -1,104 +1,38 @@
-/* Базовые стили */
+/* Общие стили */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f8f9fa;
+  color: #333;
 }
 
-/* Логотип */
 header {
   text-align: center;
   padding: 20px;
-  background-color: #fff;
+  background: #fff;
 }
 
 header h1 {
+  font-size: 2.5em;
   margin: 0;
-  font-size: 2.2em;
-  font-weight: bold;
-}
-
-.ro {
-  color: blue; /* RO */
-}
-
-.ru {
-  color: red; /* RU */
-}
-
-.interpret {
-  color: purple; /* Interpret */
 }
 
 header p {
-  margin-top: 5px;
-  color: #444;
+  margin: 5px 0 0;
+  color: #666;
 }
 
-/* Контейнер формы */
-main {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 20px;
-}
+/* Логотип */
+.ro { color: blue; font-weight: bold; }
+.ru { color: red; font-weight: bold; }
+.interpret { color: purple; font-weight: bold; }
 
-/* Сетка формы */
-.request-form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 15px;
-  background: #fff;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-/* Элементы формы */
-.request-form input,
-.request-form select,
-.request-form textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 1em;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.request-form textarea {
-  grid-column: span 2;
-  min-height: 80px;
-  resize: vertical;
-}
-
-/* Кнопка */
-.request-form button {
-  grid-column: span 2;
-  padding: 12px;
-  font-size: 1.1em;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.request-form button:hover {
-  background-color: #0056b3;
-}
-
-/* Футер */
-footer {
-  text-align: center;
-  padding: 15px;
-  background-color: #222;
-  color: #ddd;
-  margin-top: 30px;
-}/* Главная страница */
+/* ----------------- ГЛАВНАЯ ----------------- */
 .intro {
   background: #fff;
+  max-width: 800px;
+  margin: 40px auto;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -132,3 +66,53 @@ footer {
   background-color: #0056b3;
 }
 
+/* ----------------- ФОРМА ----------------- */
+.request-form {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.request-form input,
+.request-form select,
+.request-form textarea,
+.request-form button {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.request-form textarea {
+  grid-column: span 2;
+  min-height: 80px;
+}
+
+.request-form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.request-form button:hover {
+  background-color: #0056b3;
+}
+
+/* ----------------- ФУТЕР ----------------- */
+footer {
+  background: #222;
+  color: #ddd;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 0.9em;
+}
